@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Konosuke's website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('Mona-Sans.woff2') format('woff2 supports variations'),
+      url('Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+
+  @font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('Hubot-Sans.woff2') format('woff2 supports variations'),
+      url('Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+
+  html {
+    font-family: 'Mona Sans';
+    height: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Hubot Sans';
+    font-weight: 900;
+  }
+
+  body {
+    background-color: #eff1f5;
+    color: #4c4f69;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+
+  a:link:not(.logo > a,.icon > a) {
+    color: #1e66f5;
+  }
+
+  a:visited:not(.logo > a,.icon > a) {
+    color: #8839ef;
+  }
+
+  header {
+    background-color: #e6e9ef;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  main {
+    flex-grow: 1;
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  td, th {
+    padding-inline: 1rem;
+  }
+
+  footer {
+    background-color: #dce0e8;
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+    margin: auto;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+  }
+
+  .footer-inner {
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .logo {
+    flex-grow: 1;
+  }
+
+  .logo > a {
+    display: inline-block;
+    height: 30px;
+  }
+
+  .logo > a > img {
+    width: 30px;
+  }
+
+  .icon > a {
+    color: inherit;
+  }
+
+  .whoami {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to bottom right, #fe640b, #7287fd);
+    color: transparent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #24273a;
+      color: #cad3f5;
+    }
+
+    a:link:not(.logo > a,.icon > a) {
+      color: #8aadf4;
+    }
+
+    a:visited:not(.logo > a,.icon > a) {
+      color: #c6a0f6;
+    }
+
+
+    header {
+      background-color: #1e2030;
+    }
+
+    footer {
+      background-color: #181926;
+    }
+  }
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="logo"><a href="/">
+          <img src="icon.avif" alt="Icon">
+        </a></li>
+        <li class="icon"><a href="https://www.instagram.com/sakkke_dev/">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor" /><path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor" /></svg>
+        </a></li>
+        <li class="icon"><a href="https://twitter.com/sakkke_dev">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z" fill="currentColor" /></svg>
+        </a></li>
+        <li class="icon"><a href="#!">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor" /></svg>
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>
+      <div>
+          I'm Konosuke,
+      </div>
+      <div class="whoami">
+        just a random student developer
+      </div>
+    </h1>
+    <article>
+      <h1>My profile</h1>
+      <p>
+        <img src="https://gpvc.arturio.dev/sakkke" alt="Profile views">
+        <picture>
+          <source
+            srcset="https://github-readme-stats.vercel.app/api?username=sakkke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=24273a&text_color=cad3f5&icon_color=c6a0f6&title_color=8bd5ca"
+            media="(prefers-color-scheme: dark)"
+          />
+          <source
+            srcset="https://github-readme-stats.vercel.app/api?username=sakkke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          />
+          <img src="https://github-readme-stats.vercel.app/api?username=sakkke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299" />
+        </picture>
+        <picture>
+          <source
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakkke&layout=compact&hide_border=true&bg_color=24273a&text_color=cad3f5&icon_color=c6a0f6&title_color=8bd5ca"
+            media="(prefers-color-scheme: dark)"
+          />
+          <source
+            srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakkke&layout=compact&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          />
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakkke&layout=compact&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299" />
+        </picture>
+        <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+          <img src="https://activity-graph.herokuapp.com/graph?username=sakkke&theme=github" alt="Konosuke's github activity graph">
+        </a>
+      </p>
+      <details>
+        <summary>日本語 (Japanese)</summary>
+        <p>
+          こんにちは！
+          幸乃介です！
+          <a href="https://github.com/catppuccin/catppuccin">Catppuccin</a>（テーマ）と、
+          <a href="https://github.com/vlang/v">V</a>（プログラミング言語）と、
+          <a href="https://github.com/junegunn/fzf">fzf</a>（コマンド）と、
+          言語が好きです。
+          僕の夢は<strong>すべての人にコンピュータを届けること</strong>です。
+          そのため、現在 Arch Linux ディストロ <a href="https://github.com/sakkke/flightos">Flight OS</a> をつくっています。
+          そして、<strong>自作のオペレーティングシステムをインストールした仮想マシンを仮想世界で制御する</strong>という大きな目標があります。
+        </p>
+      </details>
+      <p>
+        Hello!
+        I'm Konosuke!
+        I like <a href="https://github.com/catppuccin/catppuccin">Catppuccin</a> (a theme),
+        <a href="https://github.com/vlang/v">V</a> (a programming language),
+        <a href="https://github.com/junegunn/fzf">fzf</a> (a command-line fuzzy finder),
+        and languages.
+        My dream is <strong>bringing computers to everyone</strong>, so I'm currently creating an Arch Linux distro <a href="https://github.com/sakkke/flightos">Flight OS</a>.
+        And I have a big goal that is <strong>controling virtual machines which are installed self-made an operating system, in the virtual world</strong>.
+      </p>
+      <h2>Favorite development style</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Build tool</td>
+            <td><a href="https://www.gnu.org/software/make/">GNU Make</a></td>
+          </tr>
+          <tr>
+            <td>Container</td>
+            <td><a href="https://www.docker.com/">Docker</a></td>
+          </tr>
+          <tr>
+            <td>Commit messages</td>
+            <td><a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">Semantic Commit Messages</a></td>
+          </tr>
+          <tr>
+            <td>Indentation</td>
+            <td>	4 character size tabs</td>
+          </tr>
+          <tr>
+            <td>License</td>
+            <td><a href="https://mit-license.org/">MIT</a></td>
+          </tr>
+          <tr>
+            <td>Programming language</td>
+            <td><a href="https://github.com/vlang/v">V</a></td>
+          </tr>
+          <tr>
+            <td>Version control system</td>
+            <td><a href="https://git-scm.com/">Git</a></td>
+          </tr>
+          <tr>
+            <td>Versioning</td>
+            <td><a href="https://semver.org/">Semantic Versioning</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Favorite quotes</h2>
+      <ol>
+        <li><a href="https://about.google/intl/en_us/philosophy/">It’s best to do one thing really, really well.</a></li>
+        <li><a href="https://about.google/intl/en_us/philosophy/">Fast is better than slow.</a></li>
+        <li><a href="https://github.com/catppuccin/catppuccin#-design-philosophy">Colorful is better than colorless.</a></li>
+        <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Explicit is better than implicit.</a></li>
+        <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Simple is better than complex.</a></li>
+        <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Flat is better than nested.</a></li>
+        <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Now is better than never.</a></li>
+        <li><a href="https://medium.com/publishous/5-reasons-why-done-is-better-than-perfect-4c9afa2063b8">Done is better than perfect.</a></li>
+        <li><a href="https://medium.com/ailiangan/the-origins-of-stay-hungry-stay-foolish-5a4a8d626f2">Stay hungry, stay foolish.</a></li>
+      </ol>
+      <p>
+        <a href="https://www.reddit.com/r/linuxmemes/comments/9xgfxq/why_i_use_arch_btw/">I use arch btw.</a>
+      </p>
+    </article>
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <p>
+        <small>&copy; 2022 Konosuke Sakai</small>
+      </p>
+      <p>
+        <small>This website's source code is available on <a href="https://github.com/sakkke/classic-modern">GitHub</a></small>
+      </p>
+    </div>
+  </footer>
+</body>
