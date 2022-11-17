@@ -47,11 +47,11 @@
     margin: 0;
   }
 
-  a:link:not(.logo > a, .icon > a) {
+  main a:link {
     color: #1e66f5;
   }
 
-  a:visited:not(.logo > a, .icon > a) {
+  main a:visited {
     color: #8839ef;
   }
 
@@ -60,7 +60,7 @@
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   }
 
-  ul {
+  nav>ul {
     align-items: center;
     display: flex;
     gap: 1rem;
@@ -114,8 +114,40 @@
     width: 30px;
   }
 
-  .icon>a {
+  li.nav-icon>a {
     color: inherit;
+  }
+
+  ul.icon {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li.icon {
+    list-style-type: none;
+  }
+
+  li.icon::before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    padding: 0 0 0 1rem;
+  }
+
+  li.calendar-dates::before {
+    background-image: url(./calendar-dates.svg);
+  }
+
+  li.flag::before {
+    background-image: url(./flag-alt.svg);
+  }
+
+  li.link::before {
+    background-image: url(./link.svg);
+  }
+
+  li.pin::before {
+    background-image: url(./pin.svg);
   }
 
   .whoami {
@@ -157,14 +189,14 @@
         <li class="logo"><a href="/">
             <img src="icon.avif" alt="Icon">
           </a></li>
-        <li class="icon"><a href="mailto:w32w64@gmail.com">
+        <li class="nav-icon"><a href="mailto:w32w64@gmail.com">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621H19V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554H17.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z"
                 fill="currentColor" />
             </svg>
           </a></li>
-        <li class="icon"><a href="https://www.instagram.com/sakkke_dev/">
+        <li class="nav-icon"><a href="https://www.instagram.com/sakkke_dev/">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
@@ -177,14 +209,14 @@
                 fill="currentColor" />
             </svg>
           </a></li>
-        <li class="icon"><a href="https://twitter.com/sakkke_dev">
+        <li class="nav-icon"><a href="https://twitter.com/sakkke_dev">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
                 fill="currentColor" />
             </svg>
           </a></li>
-        <li class="icon"><a href="#!">
+        <li class="nav-icon"><a href="#!">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor" />
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -204,6 +236,21 @@
         just a random student developer
       </div>
     </h1>
+    <p>
+    <ul class="icon">
+      <li class="icon pin">Earth</li>
+      <li class="icon link">Portfolio: <a href="https://classic-modern.netlify.app/">classic-modern.netlify.app</a></li>
+      <li class="icon link"><a href="https://github.com/sakkke">github.com/sakkke</a></li>
+      <li class="icon flag">Contributing every day</li>
+      <li class="icon flag">Creating an Arch Linux distro Flight OS</li>
+      <li class="icon flag">Bringing computers to everyone</li>
+      <li class="icon flag">
+        Controling virtual machines which are installed self-made an operating
+        system, in the virtual world
+      </li>
+      <li class="icon calendar-dates">Birthday: January 26, 2005</li>
+    </ul>
+    </p>
     <article>
       <h1>My profile</h1>
       <p>
