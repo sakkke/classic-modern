@@ -27,7 +27,13 @@
     height: 100%;
   }
 
-  h1, h2, h3, h4, h5, h6, .logo {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .logo {
     font-family: 'Hubot Sans';
     font-weight: 900;
   }
@@ -41,11 +47,11 @@
     margin: 0;
   }
 
-  a:link:not(.logo > a,.icon > a) {
+  a:link:not(.logo > a, .icon > a) {
     color: #1e66f5;
   }
 
-  a:visited:not(.logo > a,.icon > a) {
+  a:visited:not(.logo > a, .icon > a) {
     color: #8839ef;
   }
 
@@ -74,7 +80,8 @@
     max-width: 100%;
   }
 
-  td, th {
+  td,
+  th {
     padding-inline: 1rem;
   }
 
@@ -98,16 +105,16 @@
     flex-grow: 1;
   }
 
-  .logo > a {
+  .logo>a {
     display: inline-block;
     height: 30px;
   }
 
-  .logo > a > img {
+  .logo>a>img {
     width: 30px;
   }
 
-  .icon > a {
+  .icon>a {
     color: inherit;
   }
 
@@ -124,11 +131,11 @@
       color: #cad3f5;
     }
 
-    a:link:not(.logo > a,.icon > a) {
+    a:link:not(.logo > a, .icon > a) {
       color: #8aadf4;
     }
 
-    a:visited:not(.logo > a,.icon > a) {
+    a:visited:not(.logo > a, .icon > a) {
       color: #c6a0f6;
     }
 
@@ -142,32 +149,56 @@
     }
   }
 </style>
+
 <body>
   <header>
     <nav>
       <ul>
         <li class="logo"><a href="/">
-          <img src="icon.avif" alt="Icon">
-        </a></li>
+            <img src="icon.avif" alt="Icon">
+          </a></li>
         <li class="icon"><a href="mailto:w32w64@gmail.com">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621H19V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554H17.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z" fill="currentColor" /></svg>
-        </a></li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621H19V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554H17.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z"
+                fill="currentColor" />
+            </svg>
+          </a></li>
         <li class="icon"><a href="https://www.instagram.com/sakkke_dev/">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor" /><path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor" /></svg>
-        </a></li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+                fill="currentColor" />
+              <path
+                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                fill="currentColor" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+                fill="currentColor" />
+            </svg>
+          </a></li>
         <li class="icon"><a href="https://twitter.com/sakkke_dev">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z" fill="currentColor" /></svg>
-        </a></li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
+                fill="currentColor" />
+            </svg>
+          </a></li>
         <li class="icon"><a href="#!">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor" /></svg>
-        </a></li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z"
+                fill="currentColor" />
+            </svg>
+          </a></li>
       </ul>
     </nav>
   </header>
   <main>
     <h1>
       <div>
-          I'm Konosuke,
+        I'm Konosuke,
       </div>
       <div class="whoami">
         just a random student developer
@@ -180,27 +211,26 @@
         <picture>
           <source
             srcset="https://github-readme-stats.vercel.app/api?username=sakkke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=24273a&text_color=cad3f5&icon_color=c6a0f6&title_color=8bd5ca"
-            media="(prefers-color-scheme: dark)"
-          />
+            media="(prefers-color-scheme: dark)" />
           <source
             srcset="https://github-readme-stats.vercel.app/api?username=sakkke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          />
-          <img src="https://github-readme-stats.vercel.app/api?username=sakkke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299" />
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=sakkke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299" />
         </picture>
         <picture>
           <source
             srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakkke&layout=compact&hide_border=true&bg_color=24273a&text_color=cad3f5&icon_color=c6a0f6&title_color=8bd5ca"
-            media="(prefers-color-scheme: dark)"
-          />
+            media="(prefers-color-scheme: dark)" />
           <source
             srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakkke&layout=compact&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299"
-            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          />
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakkke&layout=compact&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299" />
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakkke&layout=compact&hide_border=true&bg_color=eff1f5&text_color=4c4f69&icon_color=8839ef&title_color=179299" />
         </picture>
         <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-          <img src="https://activity-graph.herokuapp.com/graph?username=sakkke&theme=github" alt="Konosuke's github activity graph">
+          <img src="https://activity-graph.herokuapp.com/graph?username=sakkke&theme=github"
+            alt="Konosuke's github activity graph">
         </a>
       </p>
       <details>
@@ -224,8 +254,10 @@
         <a href="https://github.com/vlang/v">V</a> (a programming language),
         <a href="https://github.com/junegunn/fzf">fzf</a> (a command-line fuzzy finder),
         and languages.
-        My dream is <strong>bringing computers to everyone</strong>, so I'm currently creating an Arch Linux distro <a href="https://github.com/sakkke/flightos">Flight OS</a>.
-        And I have a big goal that is <strong>controling virtual machines which are installed self-made an operating system, in the virtual world</strong>.
+        My dream is <strong>bringing computers to everyone</strong>, so I'm currently creating an Arch Linux distro <a
+          href="https://github.com/sakkke/flightos">Flight OS</a>.
+        And I have a big goal that is <strong>controling virtual machines which are installed self-made an operating
+          system, in the virtual world</strong>.
       </p>
       <h2>Favorite development style</h2>
       <table>
@@ -246,11 +278,12 @@
           </tr>
           <tr>
             <td>Commit messages</td>
-            <td><a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">Semantic Commit Messages</a></td>
+            <td><a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">Semantic Commit
+                Messages</a></td>
           </tr>
           <tr>
             <td>Indentation</td>
-            <td>	4 character size tabs</td>
+            <td> 4 character size tabs</td>
           </tr>
           <tr>
             <td>License</td>
@@ -272,15 +305,19 @@
       </table>
       <h2>Favorite quotes</h2>
       <ol>
-        <li><a href="https://about.google/intl/en_us/philosophy/">It’s best to do one thing really, really well.</a></li>
+        <li><a href="https://about.google/intl/en_us/philosophy/">It’s best to do one thing really, really well.</a>
+        </li>
         <li><a href="https://about.google/intl/en_us/philosophy/">Fast is better than slow.</a></li>
-        <li><a href="https://github.com/catppuccin/catppuccin#-design-philosophy">Colorful is better than colorless.</a></li>
+        <li><a href="https://github.com/catppuccin/catppuccin#-design-philosophy">Colorful is better than colorless.</a>
+        </li>
         <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Explicit is better than implicit.</a></li>
         <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Simple is better than complex.</a></li>
         <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Flat is better than nested.</a></li>
         <li><a href="https://peps.python.org/pep-0020/#the-zen-of-python">Now is better than never.</a></li>
-        <li><a href="https://medium.com/publishous/5-reasons-why-done-is-better-than-perfect-4c9afa2063b8">Done is better than perfect.</a></li>
-        <li><a href="https://medium.com/ailiangan/the-origins-of-stay-hungry-stay-foolish-5a4a8d626f2">Stay hungry, stay foolish.</a></li>
+        <li><a href="https://medium.com/publishous/5-reasons-why-done-is-better-than-perfect-4c9afa2063b8">Done is
+            better than perfect.</a></li>
+        <li><a href="https://medium.com/ailiangan/the-origins-of-stay-hungry-stay-foolish-5a4a8d626f2">Stay hungry, stay
+            foolish.</a></li>
       </ol>
       <p>
         <a href="https://www.reddit.com/r/linuxmemes/comments/9xgfxq/why_i_use_arch_btw/">I use arch btw.</a>
@@ -293,7 +330,8 @@
         <small>&copy; 2022 Konosuke Sakai</small>
       </p>
       <p>
-        <small>This website's source code is available on <a href="https://github.com/sakkke/classic-modern">GitHub</a></small>
+        <small>This website's source code is available on <a
+            href="https://github.com/sakkke/classic-modern">GitHub</a></small>
       </p>
     </div>
   </footer>
