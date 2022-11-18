@@ -145,6 +145,7 @@
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     position: sticky;
     top: 0;
+    z-index: 1;
   }
 
   nav>ul {
@@ -171,6 +172,16 @@
     position: sticky;
     top: 100%;
     width: 100%;
+  }
+
+  .hero-outer {
+    display: grid;
+    height: calc(100vh - (2rem + 30px));
+    place-items: center;
+  }
+
+  .hero-inner {
+    transform: translateY(calc(-1 * (3rem + 30px)));
   }
 
   .footer-inner {
@@ -257,21 +268,25 @@
       </nav>
     </header>
     <main>
-      <h1>
-        <div>
-          I'm Konosuke,
+      <div class="hero-outer">
+        <div class="hero-inner">
+          <h1>
+            <div>
+              I'm Konosuke,
+            </div>
+            <div class="whoami">
+              Just a Random Student Developer
+            </div>
+          </h1>
+          <p>
+          <ul class="link">
+            <li><a href="mailto:w32w64@gmail.com"><img src="./mail.svg" alt="Mail"></a></li>
+            <li><a href="https://www.instagram.com/sakkke_dev/"><img src="./instagram.svg" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/sakkke_dev"><img src="./twitter.svg" alt="Twitter"></a></li>
+            <li><a href="https://youtube.com/@sakkke"><img src="./youtube.svg" alt="YouTube"></a></li>
+          </ul>
         </div>
-        <div class="whoami">
-          Just a Random Student Developer
-        </div>
-      </h1>
-      <p>
-      <ul class="link">
-        <li><a href="mailto:w32w64@gmail.com"><img src="./mail.svg" alt="Mail"></a></li>
-        <li><a href="https://www.instagram.com/sakkke_dev/"><img src="./instagram.svg" alt="Instagram"></a></li>
-        <li><a href="https://twitter.com/sakkke_dev"><img src="./twitter.svg" alt="Twitter"></a></li>
-        <li><a href="https://youtube.com/@sakkke"><img src="./youtube.svg" alt="YouTube"></a></li>
-      </ul>
+      </div>
       <ul class="icon">
         <li class="icon pin">Earth</li>
         <li class="icon link">Portfolio: <a href="https://classic-modern.netlify.app/">classic-modern.netlify.app</a>
