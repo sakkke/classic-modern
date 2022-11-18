@@ -5,6 +5,30 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
+  <defs>
+    <linearGradient id="gradient" x1="0" x2="100%" y1="0" y2="100%">
+      <stop class="from" offset="0%" />
+      <stop class="to" offset="100%" />
+    </linearGradient>
+    <style>
+      :root {
+        --latte-teal: #179299;
+        --macchiato-teal: #8bd5ca;
+      }
+
+      path {
+        fill: url(#gradient);
+      }
+
+      .from {
+        stop-color: var(--latte-teal);
+      }
+
+      .to {
+        stop-color: var(--macchiato-teal);
+      }
+    </style>
+  </defs>
   <path
     d="M8 13C7.44772 13 7 12.5523 7 12C7 11.4477 7.44772 11 8 11C8.55228 11 9 11.4477 9 12C9 12.5523 8.55228 13 8 13Z"
     fill="currentColor"
